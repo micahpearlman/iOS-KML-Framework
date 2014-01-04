@@ -160,6 +160,155 @@
 		13AF0D1F152EB7C400949887 /* KMLXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AF0C91152EB7C400949887 /* KMLXML.h */; };
 		13AF0D20152EB7C400949887 /* KMLXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C92152EB7C400949887 /* KMLXML.m */; };
 		13AF0D30152EBB6F00949887 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0D2F152EBB6F00949887 /* UIKit.framework */; };
+		FABCD7021877446200EFB248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0BDA152EB7A600949887 /* Foundation.framework */; };
+		FABCD7101877446200EFB248 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABCD70F1877446200EFB248 /* XCTest.framework */; };
+		FABCD7111877446200EFB248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0BDA152EB7A600949887 /* Foundation.framework */; };
+		FABCD7121877446200EFB248 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0D2F152EBB6F00949887 /* UIKit.framework */; };
+		FABCD7151877446200EFB248 /* libkml-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FABCD7011877446200EFB248 /* libkml-ios.a */; };
+		FABCD71B1877446200EFB248 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FABCD7191877446200EFB248 /* InfoPlist.strings */; };
+		FABCD71D1877446200EFB248 /* kml_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FABCD71C1877446200EFB248 /* kml_iosTests.m */; };
+		FABCD724187744B400EFB248 /* KML.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C05152EB7C400949887 /* KML.h */; };
+		FABCD725187744B400EFB248 /* KMLXML.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C91152EB7C400949887 /* KMLXML.h */; };
+		FABCD726187744B400EFB248 /* KMLXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C92152EB7C400949887 /* KMLXML.m */; };
+		FABCD727187744B400EFB248 /* KMLParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C63152EB7C400949887 /* KMLParser.h */; };
+		FABCD728187744B400EFB248 /* KMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C64152EB7C400949887 /* KMLParser.m */; };
+		FABCD729187744B400EFB248 /* KMLConst.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C22152EB7C400949887 /* KMLConst.h */; };
+		FABCD72A187744B400EFB248 /* KMLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C23152EB7C400949887 /* KMLConst.m */; };
+		FABCD72B187744B400EFB248 /* KMLType.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C89152EB7C400949887 /* KMLType.h */; };
+		FABCD72C187744B400EFB248 /* KMLType.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8A152EB7C400949887 /* KMLType.m */; };
+		FABCD72D187744B400EFB248 /* KMLElement.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2E152EB7C400949887 /* KMLElement.h */; };
+		FABCD72E187744B400EFB248 /* KMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2F152EB7C400949887 /* KMLElement.m */; };
+		FABCD72F187744B400EFB248 /* KMLElementSubclass.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C30152EB7C400949887 /* KMLElementSubclass.h */; };
+		FABCD730187744B400EFB248 /* KMLRoot.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C73152EB7C400949887 /* KMLRoot.h */; };
+		FABCD731187744B400EFB248 /* KMLRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C74152EB7C400949887 /* KMLRoot.m */; };
+		FABCD732187744B400EFB248 /* KMLAbstractObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0E152EB7C400949887 /* KMLAbstractObject.h */; };
+		FABCD733187744B400EFB248 /* KMLAbstractObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0F152EB7C400949887 /* KMLAbstractObject.m */; };
+		FABCD734187744B400EFB248 /* KMLAbstractFeature.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0A152EB7C400949887 /* KMLAbstractFeature.h */; };
+		FABCD735187744B400EFB248 /* KMLAbstractFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0B152EB7C400949887 /* KMLAbstractFeature.m */; };
+		FABCD736187744B400EFB248 /* KMLNetworkLink.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5B152EB7C400949887 /* KMLNetworkLink.h */; };
+		FABCD737187744B400EFB248 /* KMLNetworkLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5C152EB7C400949887 /* KMLNetworkLink.m */; };
+		FABCD738187744B400EFB248 /* KMLPlacemark.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C67152EB7C400949887 /* KMLPlacemark.h */; };
+		FABCD739187744B400EFB248 /* KMLPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C68152EB7C400949887 /* KMLPlacemark.m */; };
+		FABCD73A187744B400EFB248 /* KMLAbstractOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C10152EB7C400949887 /* KMLAbstractOverlay.h */; };
+		FABCD73B187744B400EFB248 /* KMLAbstractOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C11152EB7C400949887 /* KMLAbstractOverlay.m */; };
+		FABCD73C187744B400EFB248 /* KMLPhotoOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C65152EB7C400949887 /* KMLPhotoOverlay.h */; };
+		FABCD73D187744B400EFB248 /* KMLPhotoOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C66152EB7C400949887 /* KMLPhotoOverlay.m */; };
+		FABCD73E187744B400EFB248 /* KMLScreenOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7B152EB7C400949887 /* KMLScreenOverlay.h */; };
+		FABCD73F187744B400EFB248 /* KMLScreenOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7C152EB7C400949887 /* KMLScreenOverlay.m */; };
+		FABCD740187744B400EFB248 /* KMLGroundOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C35152EB7C400949887 /* KMLGroundOverlay.h */; };
+		FABCD741187744B400EFB248 /* KMLGroundOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C36152EB7C400949887 /* KMLGroundOverlay.m */; };
+		FABCD742187744B400EFB248 /* KMLAbstractContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C08152EB7C400949887 /* KMLAbstractContainer.h */; };
+		FABCD743187744B400EFB248 /* KMLAbstractContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C09152EB7C400949887 /* KMLAbstractContainer.m */; };
+		FABCD744187744B400EFB248 /* KMLDocument.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2C152EB7C400949887 /* KMLDocument.h */; };
+		FABCD745187744B400EFB248 /* KMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2D152EB7C400949887 /* KMLDocument.m */; };
+		FABCD746187744B400EFB248 /* KMLFolder.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C33152EB7C400949887 /* KMLFolder.h */; };
+		FABCD747187744B400EFB248 /* KMLFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C34152EB7C400949887 /* KMLFolder.m */; };
+		FABCD748187744B400EFB248 /* KMLAbstractGeometry.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0C152EB7C400949887 /* KMLAbstractGeometry.h */; };
+		FABCD749187744B400EFB248 /* KMLAbstractGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C0D152EB7C400949887 /* KMLAbstractGeometry.m */; };
+		FABCD74A187744B400EFB248 /* KMLPoint.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C69152EB7C400949887 /* KMLPoint.h */; };
+		FABCD74B187744B400EFB248 /* KMLPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6A152EB7C400949887 /* KMLPoint.m */; };
+		FABCD74C187744B400EFB248 /* KMLLineString.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C47152EB7C400949887 /* KMLLineString.h */; };
+		FABCD74D187744B400EFB248 /* KMLLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C48152EB7C400949887 /* KMLLineString.m */; };
+		FABCD74E187744B400EFB248 /* KMLLinearRing.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C45152EB7C400949887 /* KMLLinearRing.h */; };
+		FABCD74F187744B400EFB248 /* KMLLinearRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C46152EB7C400949887 /* KMLLinearRing.m */; };
+		FABCD750187744B400EFB248 /* KMLPolygon.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6B152EB7C400949887 /* KMLPolygon.h */; };
+		FABCD751187744B400EFB248 /* KMLPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6C152EB7C400949887 /* KMLPolygon.m */; };
+		FABCD752187744B400EFB248 /* KMLMultiGeometry.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C59152EB7C400949887 /* KMLMultiGeometry.h */; };
+		FABCD753187744B400EFB248 /* KMLMultiGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5A152EB7C400949887 /* KMLMultiGeometry.m */; };
+		FABCD754187744B400EFB248 /* KMLModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C57152EB7C400949887 /* KMLModel.h */; };
+		FABCD755187744B400EFB248 /* KMLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C58152EB7C400949887 /* KMLModel.m */; };
+		FABCD756187744B400EFB248 /* KMLLink.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4B152EB7C400949887 /* KMLLink.h */; };
+		FABCD757187744B400EFB248 /* KMLLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4C152EB7C400949887 /* KMLLink.m */; };
+		FABCD758187744B400EFB248 /* KMLIcon.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C37152EB7C400949887 /* KMLIcon.h */; };
+		FABCD759187744B400EFB248 /* KMLIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C38152EB7C400949887 /* KMLIcon.m */; };
+		FABCD75A187744B400EFB248 /* KMLOrientation.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5F152EB7C400949887 /* KMLOrientation.h */; };
+		FABCD75B187744B400EFB248 /* KMLOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C60152EB7C400949887 /* KMLOrientation.m */; };
+		FABCD75C187744B400EFB248 /* KMLLocation.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4F152EB7C400949887 /* KMLLocation.h */; };
+		FABCD75D187744B400EFB248 /* KMLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C50152EB7C400949887 /* KMLLocation.m */; };
+		FABCD75E187744B400EFB248 /* KMLScale.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C75152EB7C400949887 /* KMLScale.h */; };
+		FABCD75F187744B400EFB248 /* KMLScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C76152EB7C400949887 /* KMLScale.m */; };
+		FABCD760187744B400EFB248 /* KMLAbstractStyleSelector.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C12152EB7C400949887 /* KMLAbstractStyleSelector.h */; };
+		FABCD761187744B400EFB248 /* KMLAbstractStyleSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C13152EB7C400949887 /* KMLAbstractStyleSelector.m */; };
+		FABCD762187744B400EFB248 /* KMLStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C81152EB7C400949887 /* KMLStyle.h */; };
+		FABCD763187744B400EFB248 /* KMLStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C82152EB7C400949887 /* KMLStyle.m */; };
+		FABCD764187744B400EFB248 /* KMLStyleMap.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C83152EB7C400949887 /* KMLStyleMap.h */; };
+		FABCD765187744B400EFB248 /* KMLStyleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C84152EB7C400949887 /* KMLStyleMap.m */; };
+		FABCD766187744B400EFB248 /* KMLAbstractTimePrimitive.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C16152EB7C400949887 /* KMLAbstractTimePrimitive.h */; };
+		FABCD767187744B400EFB248 /* KMLAbstractTimePrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C17152EB7C400949887 /* KMLAbstractTimePrimitive.m */; };
+		FABCD768187744B400EFB248 /* KMLTimeSpan.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C85152EB7C400949887 /* KMLTimeSpan.h */; };
+		FABCD769187744B400EFB248 /* KMLTimeSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C86152EB7C400949887 /* KMLTimeSpan.m */; };
+		FABCD76A187744B400EFB248 /* KMLTimeStamp.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C87152EB7C400949887 /* KMLTimeStamp.h */; };
+		FABCD76B187744B400EFB248 /* KMLTimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C88152EB7C400949887 /* KMLTimeStamp.m */; };
+		FABCD76C187744B400EFB248 /* KMLAbstractView.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C18152EB7C400949887 /* KMLAbstractView.h */; };
+		FABCD76D187744B400EFB248 /* KMLAbstractView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C19152EB7C400949887 /* KMLAbstractView.m */; };
+		FABCD76E187744B400EFB248 /* KMLCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1E152EB7C400949887 /* KMLCamera.h */; };
+		FABCD76F187744B400EFB248 /* KMLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1F152EB7C400949887 /* KMLCamera.m */; };
+		FABCD770187744B400EFB248 /* KMLLookAt.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C53152EB7C400949887 /* KMLLookAt.h */; };
+		FABCD771187744B400EFB248 /* KMLLookAt.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C54152EB7C400949887 /* KMLLookAt.m */; };
+		FABCD772187744B400EFB248 /* KMLRegion.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6F152EB7C400949887 /* KMLRegion.h */; };
+		FABCD773187744B400EFB248 /* KMLRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C70152EB7C400949887 /* KMLRegion.m */; };
+		FABCD774187744B400EFB248 /* KMLLod.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C51152EB7C400949887 /* KMLLod.h */; };
+		FABCD775187744B400EFB248 /* KMLLod.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C52152EB7C400949887 /* KMLLod.m */; };
+		FABCD776187744B400EFB248 /* KMLLatLonBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C43152EB7C400949887 /* KMLLatLonBox.h */; };
+		FABCD777187744B400EFB248 /* KMLLatLonBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C44152EB7C400949887 /* KMLLatLonBox.m */; };
+		FABCD778187744B400EFB248 /* KMLLatLonAltBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C41152EB7C400949887 /* KMLLatLonAltBox.h */; };
+		FABCD779187744B400EFB248 /* KMLLatLonAltBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C42152EB7C400949887 /* KMLLatLonAltBox.m */; };
+		FABCD77A187744B400EFB248 /* KMLAbstractSubStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C14152EB7C400949887 /* KMLAbstractSubStyle.h */; };
+		FABCD77B187744B400EFB248 /* KMLAbstractSubStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C15152EB7C400949887 /* KMLAbstractSubStyle.m */; };
+		FABCD77C187744B400EFB248 /* KMLBalloonStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1C152EB7C400949887 /* KMLBalloonStyle.h */; };
+		FABCD77D187744B400EFB248 /* KMLBalloonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1D152EB7C400949887 /* KMLBalloonStyle.m */; };
+		FABCD77E187744B400EFB248 /* KMLListStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4D152EB7C400949887 /* KMLListStyle.h */; };
+		FABCD77F187744B400EFB248 /* KMLListStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4E152EB7C400949887 /* KMLListStyle.m */; };
+		FABCD780187744B400EFB248 /* KMLAbstractColorStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C06152EB7C400949887 /* KMLAbstractColorStyle.h */; };
+		FABCD781187744B400EFB248 /* KMLAbstractColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C07152EB7C400949887 /* KMLAbstractColorStyle.m */; };
+		FABCD782187744B400EFB248 /* KMLLineStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C49152EB7C400949887 /* KMLLineStyle.h */; };
+		FABCD783187744B400EFB248 /* KMLLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C4A152EB7C400949887 /* KMLLineStyle.m */; };
+		FABCD784187744B400EFB248 /* KMLPolyStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6D152EB7C400949887 /* KMLPolyStyle.h */; };
+		FABCD785187744B400EFB248 /* KMLPolyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C6E152EB7C400949887 /* KMLPolyStyle.m */; };
+		FABCD786187744B400EFB248 /* KMLIconStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C39152EB7C400949887 /* KMLIconStyle.h */; };
+		FABCD787187744B400EFB248 /* KMLIconStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3A152EB7C400949887 /* KMLIconStyle.m */; };
+		FABCD788187744B400EFB248 /* KMLLabelStyle.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3F152EB7C400949887 /* KMLLabelStyle.h */; };
+		FABCD789187744B400EFB248 /* KMLLabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C40152EB7C400949887 /* KMLLabelStyle.m */; };
+		FABCD78A187744B400EFB248 /* KMLNetworkLinkControl.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5D152EB7C400949887 /* KMLNetworkLinkControl.h */; };
+		FABCD78B187744B400EFB248 /* KMLNetworkLinkControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C5E152EB7C400949887 /* KMLNetworkLinkControl.m */; };
+		FABCD78C187744B400EFB248 /* KMLMetadata.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C55152EB7C400949887 /* KMLMetadata.h */; };
+		FABCD78D187744B400EFB248 /* KMLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C56152EB7C400949887 /* KMLMetadata.m */; };
+		FABCD78E187744B400EFB248 /* KMLExtendedData.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C31152EB7C400949887 /* KMLExtendedData.h */; };
+		FABCD78F187744B400EFB248 /* KMLExtendedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C32152EB7C400949887 /* KMLExtendedData.m */; };
+		FABCD790187744B400EFB248 /* KMLImagePyramid.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3B152EB7C400949887 /* KMLImagePyramid.h */; };
+		FABCD791187744B400EFB248 /* KMLImagePyramid.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3C152EB7C400949887 /* KMLImagePyramid.m */; };
+		FABCD792187744B400EFB248 /* KMLPair.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C61152EB7C400949887 /* KMLPair.h */; };
+		FABCD793187744B400EFB248 /* KMLPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C62152EB7C400949887 /* KMLPair.m */; };
+		FABCD794187744B400EFB248 /* KMLItemIcon.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3D152EB7C400949887 /* KMLItemIcon.h */; };
+		FABCD795187744B400EFB248 /* KMLItemIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C3E152EB7C400949887 /* KMLItemIcon.m */; };
+		FABCD796187744B400EFB248 /* KMLResourceMap.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C71152EB7C400949887 /* KMLResourceMap.h */; };
+		FABCD797187744B400EFB248 /* KMLResourceMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C72152EB7C400949887 /* KMLResourceMap.m */; };
+		FABCD798187744B400EFB248 /* KMLAlias.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1A152EB7C400949887 /* KMLAlias.h */; };
+		FABCD799187744B400EFB248 /* KMLAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C1B152EB7C400949887 /* KMLAlias.m */; };
+		FABCD79A187744B400EFB248 /* KMLSchema.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C77152EB7C400949887 /* KMLSchema.h */; };
+		FABCD79B187744B400EFB248 /* KMLSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C78152EB7C400949887 /* KMLSchema.m */; };
+		FABCD79C187744B400EFB248 /* KMLSchemaData.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C79152EB7C400949887 /* KMLSchemaData.h */; };
+		FABCD79D187744B400EFB248 /* KMLSchemaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7A152EB7C400949887 /* KMLSchemaData.m */; };
+		FABCD79E187744B400EFB248 /* KMLSimpleData.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7D152EB7C400949887 /* KMLSimpleData.h */; };
+		FABCD79F187744B400EFB248 /* KMLSimpleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7E152EB7C400949887 /* KMLSimpleData.m */; };
+		FABCD7A0187744B500EFB248 /* KMLData.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C28152EB7C400949887 /* KMLData.h */; };
+		FABCD7A1187744B500EFB248 /* KMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C29152EB7C400949887 /* KMLData.m */; };
+		FABCD7A2187744B500EFB248 /* KMLSimpleField.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C7F152EB7C400949887 /* KMLSimpleField.h */; };
+		FABCD7A3187744B500EFB248 /* KMLSimpleField.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C80152EB7C400949887 /* KMLSimpleField.m */; };
+		FABCD7A4187744B500EFB248 /* KMLViewVolume.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8F152EB7C400949887 /* KMLViewVolume.h */; };
+		FABCD7A5187744B500EFB248 /* KMLViewVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C90152EB7C400949887 /* KMLViewVolume.m */; };
+		FABCD7A6187744B500EFB248 /* KMLUpdate.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8B152EB7C400949887 /* KMLUpdate.h */; };
+		FABCD7A7187744B500EFB248 /* KMLUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8C152EB7C400949887 /* KMLUpdate.m */; };
+		FABCD7A8187744B500EFB248 /* KMLCreate.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C26152EB7C400949887 /* KMLCreate.h */; };
+		FABCD7A9187744B500EFB248 /* KMLCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C27152EB7C400949887 /* KMLCreate.m */; };
+		FABCD7AA187744B500EFB248 /* KMLChange.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C20152EB7C400949887 /* KMLChange.h */; };
+		FABCD7AB187744B500EFB248 /* KMLChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C21152EB7C400949887 /* KMLChange.m */; };
+		FABCD7AC187744B500EFB248 /* KMLDelete.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2A152EB7C400949887 /* KMLDelete.h */; };
+		FABCD7AD187744B500EFB248 /* KMLDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C2B152EB7C400949887 /* KMLDelete.m */; };
+		FABCD7AE187744B500EFB248 /* KMLVec2.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8D152EB7C400949887 /* KMLVec2.h */; };
+		FABCD7AF187744B500EFB248 /* KMLVec2.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C8E152EB7C400949887 /* KMLVec2.m */; };
+		FABCD7B0187744B500EFB248 /* KMLCoordinate.h in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C24152EB7C400949887 /* KMLCoordinate.h */; };
+		FABCD7B1187744B500EFB248 /* KMLCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF0C25152EB7C400949887 /* KMLCoordinate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,7 +326,26 @@
 			remoteGlobalIDString = 13AF0BD6152EB7A600949887;
 			remoteInfo = KML;
 		};
+		FABCD7131877446200EFB248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13AF0BCA152EB7A600949887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABCD7001877446200EFB248;
+			remoteInfo = "kml-ios";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FABCD6FF1877446200EFB248 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		131D1C581532B900007479F1 /* KML_Samples.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KML_Samples.kml; sourceTree = "<group>"; };
@@ -336,6 +504,13 @@
 		13AF0C91152EB7C400949887 /* KMLXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMLXML.h; sourceTree = "<group>"; };
 		13AF0C92152EB7C400949887 /* KMLXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMLXML.m; sourceTree = "<group>"; };
 		13AF0D2F152EBB6F00949887 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FABCD7011877446200EFB248 /* libkml-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libkml-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABCD7051877446200EFB248 /* kml-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kml-ios-Prefix.pch"; sourceTree = "<group>"; };
+		FABCD70E1877446200EFB248 /* kml-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kml-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABCD70F1877446200EFB248 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FABCD7181877446200EFB248 /* kml-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kml-iosTests-Info.plist"; sourceTree = "<group>"; };
+		FABCD71A1877446200EFB248 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FABCD71C1877446200EFB248 /* kml_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kml_iosTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +535,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FABCD6FE1877446200EFB248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABCD7021877446200EFB248 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABCD70B1877446200EFB248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABCD7101877446200EFB248 /* XCTest.framework in Frameworks */,
+				FABCD7121877446200EFB248 /* UIKit.framework in Frameworks */,
+				FABCD7151877446200EFB248 /* libkml-ios.a in Frameworks */,
+				FABCD7111877446200EFB248 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -368,6 +562,8 @@
 			children = (
 				13AF0BDC152EB7A600949887 /* KML */,
 				13AF0BF4152EB7A600949887 /* KMLTests */,
+				FABCD7031877446200EFB248 /* kml-ios */,
+				FABCD7161877446200EFB248 /* kml-iosTests */,
 				13AF0BD9152EB7A600949887 /* Frameworks */,
 				13AF0BD8152EB7A600949887 /* Products */,
 			);
@@ -378,6 +574,8 @@
 			children = (
 				13AF0BD7152EB7A600949887 /* KML.framework */,
 				13AF0BE8152EB7A600949887 /* KMLTests.octest */,
+				FABCD7011877446200EFB248 /* libkml-ios.a */,
+				FABCD70E1877446200EFB248 /* kml-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,6 +587,7 @@
 				13AF0BDA152EB7A600949887 /* Foundation.framework */,
 				13AF0BE9152EB7A600949887 /* SenTestingKit.framework */,
 				131D1C6E1532BCDB007479F1 /* CoreGraphics.framework */,
+				FABCD70F1877446200EFB248 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -661,6 +860,40 @@
 			name = AbstractView;
 			sourceTree = "<group>";
 		};
+		FABCD7031877446200EFB248 /* kml-ios */ = {
+			isa = PBXGroup;
+			children = (
+				FABCD7041877446200EFB248 /* Supporting Files */,
+			);
+			path = "kml-ios";
+			sourceTree = "<group>";
+		};
+		FABCD7041877446200EFB248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABCD7051877446200EFB248 /* kml-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FABCD7161877446200EFB248 /* kml-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FABCD71C1877446200EFB248 /* kml_iosTests.m */,
+				FABCD7171877446200EFB248 /* Supporting Files */,
+			);
+			path = "kml-iosTests";
+			sourceTree = "<group>";
+		};
+		FABCD7171877446200EFB248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABCD7181877446200EFB248 /* kml-iosTests-Info.plist */,
+				FABCD7191877446200EFB248 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -787,6 +1020,41 @@
 			productReference = 13AF0BE8152EB7A600949887 /* KMLTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		FABCD7001877446200EFB248 /* kml-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABCD7221877446300EFB248 /* Build configuration list for PBXNativeTarget "kml-ios" */;
+			buildPhases = (
+				FABCD6FD1877446200EFB248 /* Sources */,
+				FABCD6FE1877446200EFB248 /* Frameworks */,
+				FABCD6FF1877446200EFB248 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kml-ios";
+			productName = "kml-ios";
+			productReference = FABCD7011877446200EFB248 /* libkml-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FABCD70D1877446200EFB248 /* kml-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABCD7231877446300EFB248 /* Build configuration list for PBXNativeTarget "kml-iosTests" */;
+			buildPhases = (
+				FABCD70A1877446200EFB248 /* Sources */,
+				FABCD70B1877446200EFB248 /* Frameworks */,
+				FABCD70C1877446200EFB248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FABCD7141877446200EFB248 /* PBXTargetDependency */,
+			);
+			name = "kml-iosTests";
+			productName = "kml-iosTests";
+			productReference = FABCD70E1877446200EFB248 /* kml-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -794,6 +1062,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					FABCD70D1877446200EFB248 = {
+						TestTargetID = 13AF0BD6152EB7A600949887;
+					};
+				};
 			};
 			buildConfigurationList = 13AF0BCD152EB7A600949887 /* Build configuration list for PBXProject "KML" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -809,6 +1082,8 @@
 			targets = (
 				13AF0BD6152EB7A600949887 /* KML */,
 				13AF0BE7152EB7A600949887 /* KMLTests */,
+				FABCD7001877446200EFB248 /* kml-ios */,
+				FABCD70D1877446200EFB248 /* kml-iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -828,6 +1103,14 @@
 			files = (
 				13AF0BF9152EB7A600949887 /* InfoPlist.strings in Resources */,
 				131D1C591532B900007479F1 /* KML_Samples.kml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABCD70C1877446200EFB248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABCD71B1877446200EFB248 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -974,6 +1257,163 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FABCD6FD1877446200EFB248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABCD724187744B400EFB248 /* KML.h in Sources */,
+				FABCD725187744B400EFB248 /* KMLXML.h in Sources */,
+				FABCD726187744B400EFB248 /* KMLXML.m in Sources */,
+				FABCD727187744B400EFB248 /* KMLParser.h in Sources */,
+				FABCD728187744B400EFB248 /* KMLParser.m in Sources */,
+				FABCD729187744B400EFB248 /* KMLConst.h in Sources */,
+				FABCD72A187744B400EFB248 /* KMLConst.m in Sources */,
+				FABCD72B187744B400EFB248 /* KMLType.h in Sources */,
+				FABCD72C187744B400EFB248 /* KMLType.m in Sources */,
+				FABCD72D187744B400EFB248 /* KMLElement.h in Sources */,
+				FABCD72E187744B400EFB248 /* KMLElement.m in Sources */,
+				FABCD72F187744B400EFB248 /* KMLElementSubclass.h in Sources */,
+				FABCD730187744B400EFB248 /* KMLRoot.h in Sources */,
+				FABCD731187744B400EFB248 /* KMLRoot.m in Sources */,
+				FABCD732187744B400EFB248 /* KMLAbstractObject.h in Sources */,
+				FABCD733187744B400EFB248 /* KMLAbstractObject.m in Sources */,
+				FABCD734187744B400EFB248 /* KMLAbstractFeature.h in Sources */,
+				FABCD735187744B400EFB248 /* KMLAbstractFeature.m in Sources */,
+				FABCD736187744B400EFB248 /* KMLNetworkLink.h in Sources */,
+				FABCD737187744B400EFB248 /* KMLNetworkLink.m in Sources */,
+				FABCD738187744B400EFB248 /* KMLPlacemark.h in Sources */,
+				FABCD739187744B400EFB248 /* KMLPlacemark.m in Sources */,
+				FABCD73A187744B400EFB248 /* KMLAbstractOverlay.h in Sources */,
+				FABCD73B187744B400EFB248 /* KMLAbstractOverlay.m in Sources */,
+				FABCD73C187744B400EFB248 /* KMLPhotoOverlay.h in Sources */,
+				FABCD73D187744B400EFB248 /* KMLPhotoOverlay.m in Sources */,
+				FABCD73E187744B400EFB248 /* KMLScreenOverlay.h in Sources */,
+				FABCD73F187744B400EFB248 /* KMLScreenOverlay.m in Sources */,
+				FABCD740187744B400EFB248 /* KMLGroundOverlay.h in Sources */,
+				FABCD741187744B400EFB248 /* KMLGroundOverlay.m in Sources */,
+				FABCD742187744B400EFB248 /* KMLAbstractContainer.h in Sources */,
+				FABCD743187744B400EFB248 /* KMLAbstractContainer.m in Sources */,
+				FABCD744187744B400EFB248 /* KMLDocument.h in Sources */,
+				FABCD745187744B400EFB248 /* KMLDocument.m in Sources */,
+				FABCD746187744B400EFB248 /* KMLFolder.h in Sources */,
+				FABCD747187744B400EFB248 /* KMLFolder.m in Sources */,
+				FABCD748187744B400EFB248 /* KMLAbstractGeometry.h in Sources */,
+				FABCD749187744B400EFB248 /* KMLAbstractGeometry.m in Sources */,
+				FABCD74A187744B400EFB248 /* KMLPoint.h in Sources */,
+				FABCD74B187744B400EFB248 /* KMLPoint.m in Sources */,
+				FABCD74C187744B400EFB248 /* KMLLineString.h in Sources */,
+				FABCD74D187744B400EFB248 /* KMLLineString.m in Sources */,
+				FABCD74E187744B400EFB248 /* KMLLinearRing.h in Sources */,
+				FABCD74F187744B400EFB248 /* KMLLinearRing.m in Sources */,
+				FABCD750187744B400EFB248 /* KMLPolygon.h in Sources */,
+				FABCD751187744B400EFB248 /* KMLPolygon.m in Sources */,
+				FABCD752187744B400EFB248 /* KMLMultiGeometry.h in Sources */,
+				FABCD753187744B400EFB248 /* KMLMultiGeometry.m in Sources */,
+				FABCD754187744B400EFB248 /* KMLModel.h in Sources */,
+				FABCD755187744B400EFB248 /* KMLModel.m in Sources */,
+				FABCD756187744B400EFB248 /* KMLLink.h in Sources */,
+				FABCD757187744B400EFB248 /* KMLLink.m in Sources */,
+				FABCD758187744B400EFB248 /* KMLIcon.h in Sources */,
+				FABCD759187744B400EFB248 /* KMLIcon.m in Sources */,
+				FABCD75A187744B400EFB248 /* KMLOrientation.h in Sources */,
+				FABCD75B187744B400EFB248 /* KMLOrientation.m in Sources */,
+				FABCD75C187744B400EFB248 /* KMLLocation.h in Sources */,
+				FABCD75D187744B400EFB248 /* KMLLocation.m in Sources */,
+				FABCD75E187744B400EFB248 /* KMLScale.h in Sources */,
+				FABCD75F187744B400EFB248 /* KMLScale.m in Sources */,
+				FABCD760187744B400EFB248 /* KMLAbstractStyleSelector.h in Sources */,
+				FABCD761187744B400EFB248 /* KMLAbstractStyleSelector.m in Sources */,
+				FABCD762187744B400EFB248 /* KMLStyle.h in Sources */,
+				FABCD763187744B400EFB248 /* KMLStyle.m in Sources */,
+				FABCD764187744B400EFB248 /* KMLStyleMap.h in Sources */,
+				FABCD765187744B400EFB248 /* KMLStyleMap.m in Sources */,
+				FABCD766187744B400EFB248 /* KMLAbstractTimePrimitive.h in Sources */,
+				FABCD767187744B400EFB248 /* KMLAbstractTimePrimitive.m in Sources */,
+				FABCD768187744B400EFB248 /* KMLTimeSpan.h in Sources */,
+				FABCD769187744B400EFB248 /* KMLTimeSpan.m in Sources */,
+				FABCD76A187744B400EFB248 /* KMLTimeStamp.h in Sources */,
+				FABCD76B187744B400EFB248 /* KMLTimeStamp.m in Sources */,
+				FABCD76C187744B400EFB248 /* KMLAbstractView.h in Sources */,
+				FABCD76D187744B400EFB248 /* KMLAbstractView.m in Sources */,
+				FABCD76E187744B400EFB248 /* KMLCamera.h in Sources */,
+				FABCD76F187744B400EFB248 /* KMLCamera.m in Sources */,
+				FABCD770187744B400EFB248 /* KMLLookAt.h in Sources */,
+				FABCD771187744B400EFB248 /* KMLLookAt.m in Sources */,
+				FABCD772187744B400EFB248 /* KMLRegion.h in Sources */,
+				FABCD773187744B400EFB248 /* KMLRegion.m in Sources */,
+				FABCD774187744B400EFB248 /* KMLLod.h in Sources */,
+				FABCD775187744B400EFB248 /* KMLLod.m in Sources */,
+				FABCD776187744B400EFB248 /* KMLLatLonBox.h in Sources */,
+				FABCD777187744B400EFB248 /* KMLLatLonBox.m in Sources */,
+				FABCD778187744B400EFB248 /* KMLLatLonAltBox.h in Sources */,
+				FABCD779187744B400EFB248 /* KMLLatLonAltBox.m in Sources */,
+				FABCD77A187744B400EFB248 /* KMLAbstractSubStyle.h in Sources */,
+				FABCD77B187744B400EFB248 /* KMLAbstractSubStyle.m in Sources */,
+				FABCD77C187744B400EFB248 /* KMLBalloonStyle.h in Sources */,
+				FABCD77D187744B400EFB248 /* KMLBalloonStyle.m in Sources */,
+				FABCD77E187744B400EFB248 /* KMLListStyle.h in Sources */,
+				FABCD77F187744B400EFB248 /* KMLListStyle.m in Sources */,
+				FABCD780187744B400EFB248 /* KMLAbstractColorStyle.h in Sources */,
+				FABCD781187744B400EFB248 /* KMLAbstractColorStyle.m in Sources */,
+				FABCD782187744B400EFB248 /* KMLLineStyle.h in Sources */,
+				FABCD783187744B400EFB248 /* KMLLineStyle.m in Sources */,
+				FABCD784187744B400EFB248 /* KMLPolyStyle.h in Sources */,
+				FABCD785187744B400EFB248 /* KMLPolyStyle.m in Sources */,
+				FABCD786187744B400EFB248 /* KMLIconStyle.h in Sources */,
+				FABCD787187744B400EFB248 /* KMLIconStyle.m in Sources */,
+				FABCD788187744B400EFB248 /* KMLLabelStyle.h in Sources */,
+				FABCD789187744B400EFB248 /* KMLLabelStyle.m in Sources */,
+				FABCD78A187744B400EFB248 /* KMLNetworkLinkControl.h in Sources */,
+				FABCD78B187744B400EFB248 /* KMLNetworkLinkControl.m in Sources */,
+				FABCD78C187744B400EFB248 /* KMLMetadata.h in Sources */,
+				FABCD78D187744B400EFB248 /* KMLMetadata.m in Sources */,
+				FABCD78E187744B400EFB248 /* KMLExtendedData.h in Sources */,
+				FABCD78F187744B400EFB248 /* KMLExtendedData.m in Sources */,
+				FABCD790187744B400EFB248 /* KMLImagePyramid.h in Sources */,
+				FABCD791187744B400EFB248 /* KMLImagePyramid.m in Sources */,
+				FABCD792187744B400EFB248 /* KMLPair.h in Sources */,
+				FABCD793187744B400EFB248 /* KMLPair.m in Sources */,
+				FABCD794187744B400EFB248 /* KMLItemIcon.h in Sources */,
+				FABCD795187744B400EFB248 /* KMLItemIcon.m in Sources */,
+				FABCD796187744B400EFB248 /* KMLResourceMap.h in Sources */,
+				FABCD797187744B400EFB248 /* KMLResourceMap.m in Sources */,
+				FABCD798187744B400EFB248 /* KMLAlias.h in Sources */,
+				FABCD799187744B400EFB248 /* KMLAlias.m in Sources */,
+				FABCD79A187744B400EFB248 /* KMLSchema.h in Sources */,
+				FABCD79B187744B400EFB248 /* KMLSchema.m in Sources */,
+				FABCD79C187744B400EFB248 /* KMLSchemaData.h in Sources */,
+				FABCD79D187744B400EFB248 /* KMLSchemaData.m in Sources */,
+				FABCD79E187744B400EFB248 /* KMLSimpleData.h in Sources */,
+				FABCD79F187744B400EFB248 /* KMLSimpleData.m in Sources */,
+				FABCD7A0187744B500EFB248 /* KMLData.h in Sources */,
+				FABCD7A1187744B500EFB248 /* KMLData.m in Sources */,
+				FABCD7A2187744B500EFB248 /* KMLSimpleField.h in Sources */,
+				FABCD7A3187744B500EFB248 /* KMLSimpleField.m in Sources */,
+				FABCD7A4187744B500EFB248 /* KMLViewVolume.h in Sources */,
+				FABCD7A5187744B500EFB248 /* KMLViewVolume.m in Sources */,
+				FABCD7A6187744B500EFB248 /* KMLUpdate.h in Sources */,
+				FABCD7A7187744B500EFB248 /* KMLUpdate.m in Sources */,
+				FABCD7A8187744B500EFB248 /* KMLCreate.h in Sources */,
+				FABCD7A9187744B500EFB248 /* KMLCreate.m in Sources */,
+				FABCD7AA187744B500EFB248 /* KMLChange.h in Sources */,
+				FABCD7AB187744B500EFB248 /* KMLChange.m in Sources */,
+				FABCD7AC187744B500EFB248 /* KMLDelete.h in Sources */,
+				FABCD7AD187744B500EFB248 /* KMLDelete.m in Sources */,
+				FABCD7AE187744B500EFB248 /* KMLVec2.h in Sources */,
+				FABCD7AF187744B500EFB248 /* KMLVec2.m in Sources */,
+				FABCD7B0187744B500EFB248 /* KMLCoordinate.h in Sources */,
+				FABCD7B1187744B500EFB248 /* KMLCoordinate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABCD70A1877446200EFB248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABCD71D1877446200EFB248 /* kml_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -986,6 +1426,11 @@
 			isa = PBXTargetDependency;
 			target = 13AF0BD6152EB7A600949887 /* KML */;
 			targetProxy = 13AF0BF0152EB7A600949887 /* PBXContainerItemProxy */;
+		};
+		FABCD7141877446200EFB248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FABCD7001877446200EFB248 /* kml-ios */;
+			targetProxy = FABCD7131877446200EFB248 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1002,6 +1447,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				13AF0BF8152EB7A600949887 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FABCD7191877446200EFB248 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABCD71A1877446200EFB248 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1119,6 +1572,146 @@
 			};
 			name = Release;
 		};
+		FABCD71E1877446300EFB248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/kml_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kml-ios/kml-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FABCD71F1877446300EFB248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/kml_ios.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kml-ios/kml-ios-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FABCD7201877446300EFB248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kml-ios/kml-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "kml-iosTests/kml-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FABCD7211877446300EFB248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "kml-ios/kml-ios-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "kml-iosTests/kml-iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1148,6 +1741,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FABCD7221877446300EFB248 /* Build configuration list for PBXNativeTarget "kml-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABCD71E1877446300EFB248 /* Debug */,
+				FABCD71F1877446300EFB248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FABCD7231877446300EFB248 /* Build configuration list for PBXNativeTarget "kml-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABCD7201877446300EFB248 /* Debug */,
+				FABCD7211877446300EFB248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
